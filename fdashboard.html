@@ -1,39 +1,62 @@
 <!doctype html>
 <html>
-    <head>
-        <title>
-            Faculty Dashboard
-        </title>
-        <link rel="stylesheet" type="text/css" href="my.css">
-    </head>
-    <body>
-            <div id="main">
-                    <center><h1>The Oxford College of Science</center>
-                    <center><h3>HSR Layout, Bangalore<center>
-            </div>
-            <div id="navigation">
-                <br><br><br><br><br><br><br><br>
-            </div>
-    
-            <div id="form1">
-                <p align ="right">
-                    <button type="button">Logout</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                </p>
-                &nbsp;&nbsp;&nbsp;<select> 
-                        <option value="Course">Course</option>
-                        <option value="MCA">MCA</option>
-                        <option value="MSC">MSC</option>
-                </select>
-                <select>
-                        <option value="Sem">Semester</option> 
-                        <option value="I">I</option>
-                        <option value="II">II</option>
-                        <option value="III">III</option>
-                        <option value="IV">IV</option>
-                        <option value="V">V</option>
-                        <option value="VI">VI</option>
-                </select>
-                <button type="button">Submit</button>
-            </div>
-    </body>
+
+<head>
+    <title>
+        Faculty Dashboard
+    </title>
+    <link rel="stylesheet" type="text/css" href="my.css">
+</head>
+
+<body>
+    <div id="main">
+        <img src=".\logo.png" width="200" height="112" border="0" align="left">
+        <center>
+            <h1>The Oxford College of Science
+        </center>
+        <center>
+            <h3>HSR Layout, Bangalore<center>
+    </div>
+    <div id="navigation">
+        <br><br><br><br><br><br><br><br>
+    </div>
+
+    <div id="form1">
+        <p align="right">
+            <button type="button" onclick="myFunction()">Logout</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        &nbsp;&nbsp;&nbsp;<select>
+            <option value="Course">Course</option>
+            <option value="MCA">MCA</option>
+            <option value="MSC">MSC</option>
+        </select>
+        <select>
+            <option value="Sem">Semester</option>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
+            <option value="V">V</option>
+            <option value="VI">VI</option>
+        </select>
+        <select>
+            <option value="Subject">Subject</option>
+            <option value="adbms">ADBMS</option>
+            <option value="ai">AI</option>
+            <option value="awp">AWP</option>
+            <option value="awplab">AWP Lab</option>
+            <option value="project">Project</option>
+            <option value="oe">Media & Society</option>
+        </select>
+
+        <button type="button">Submit</button>
+    </div>
+
+    <script>
+        function myFunction() {
+            window.location.href = 'home.html';
+        }
+    </script>
+</body>
+
 </html>
